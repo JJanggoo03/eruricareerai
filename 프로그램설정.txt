@@ -14,14 +14,14 @@ TRUST_PROXY="0"
 # === AI 서버 | Ollama 원본 주소만 입력. /api/chat은 붙이지 않습니다. ===
 OLLAMA_BASE_URL="" 
 OLLAMA_MODEL="qwen2.5:7b"
-OLLAMA_API_KEY=""
+OLLAMA_API_KEY="ai api입력"
 OLLAMA_TIMEOUT="300"
 OLLAMA_TIMEOUT_MS="180000"
 OLLAMA_NUM_CTX="16384"
 
 # === 데이터베이스 | MySQL 선택 시 MYSQL_ 항목 사용. DB 계정의 Host 권한은 DB 관리자에서 변경합니다. ===
 DATABASE_DRIVER="mysql"
-MYSQL_HOST="" 
+MYSQL_HOST="ai api입력" 
 MYSQL_PORT="3306"
 MYSQL_DATABASE="classkeep"
 MYSQL_USER="classkeep_app"
