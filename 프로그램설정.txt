@@ -1,0 +1,67 @@
+﻿# 프로그램 설정 (메모장으로 수정 후 저장 → 실행 중인 서버 종료 → 시작.cmd 재실행)
+# 형식: 항목=값. #로 시작하는 줄만 설명입니다. 값 안의 #, $, =, 역슬래시는 그대로 사용합니다.
+# 따옴표는 선택입니다. 값 앞뒤 공백이 필요하면 전체 값을 따옴표로 감싸세요.
+# 설정 파일은 UTF-8로 저장하세요. 프로그램은 수정 즉시가 아니라 다음 실행부터 적용합니다.
+# 이 파일에 API 키와 DB 비밀번호가 있으므로 공유할 때는 값을 지우세요.
+
+# === 사이트 접속 | PORT는 웹사이트 포트, PUBLIC_URL은 사용자가 실제 접속하는 주소 ===
+HOST="0.0.0.0"
+PORT="3000"
+PUBLIC_URL="http://172.30.1.71:3000" 
+DEMO_PASSCODE="rlawnstn12345"
+TRUST_PROXY="0"
+
+# === AI 서버 | Ollama 원본 주소만 입력. /api/chat은 붙이지 않습니다. ===
+OLLAMA_BASE_URL="" 
+OLLAMA_MODEL="qwen2.5:7b"
+OLLAMA_API_KEY=""
+OLLAMA_TIMEOUT="300"
+OLLAMA_TIMEOUT_MS="180000"
+OLLAMA_NUM_CTX="16384"
+
+# === 데이터베이스 | MySQL 선택 시 MYSQL_ 항목 사용. DB 계정의 Host 권한은 DB 관리자에서 변경합니다. ===
+DATABASE_DRIVER="mysql"
+MYSQL_HOST="" 
+MYSQL_PORT="3306"
+MYSQL_DATABASE="classkeep"
+MYSQL_USER="classkeep_app"
+MYSQL_PASSWORD="66e9af574c651aac99e31581fc038f1abab1e80348f4c926c02b0552a4c3a9b3"
+DATABASE_URL=""
+
+# === GitHub | 앱에 등록한 Callback URL은 PUBLIC_URL/github/callback과 같아야 합니다. ===
+GITHUB_CLIENT_ID="Iv23liWfchQxAsFFhuog"
+GITHUB_CLIENT_SECRET="3123503752d9038df252136578c101af5421bb44"
+GITHUB_APP_ID="5613446"
+GITHUB_APP_SLUG="hakerton-forkangwon"
+
+# === 고용24 | 공통키 또는 승인받은 서비스별 키를 입력합니다. ===
+WORK24_BASE_URL="https://www.work24.go.kr/cm/openApi/call"
+WORK24_AUTH_KEY=""
+WORK24_AUTH_KEY_JOBS="ec6ea792-4867-4ac0-ace5-b80154976ecc"
+WORK24_AUTH_KEY_TRAINING_CARD="d006b530-4998-4719-bcff-62c1bb81797f"
+WORK24_AUTH_KEY_TRAINING_EMPLOYER="29e9854f-4f54-4cf5-81d1-3ba20da10b2f"
+WORK24_AUTH_KEY_TRAINING_CONSORTIUM="284fa3b0-9e35-4913-bcc8-d82ba038ad92"
+WORK24_AUTH_KEY_TRAINING_WORK_STUDY="414e5018-ee9e-4c51-9988-e4223d1b1121"
+WORK24_AUTH_KEY_JOBSEEKER_PROGRAMS="f4476125-692e-4de7-bb16-e884a9e3cc64"
+WORK24_AUTH_KEY_SMALL_COMPANIES="fb8a117b-2121-41f9-a6fc-55d6925b497a"
+WORK24_AUTH_KEY_OCCUPATIONS="19e824c9-7805-4925-b26d-2a53777fda36"
+WORK24_AUTH_KEY_COMMON_CODES="a1545955-1e30-4123-a5b6-8730df2acc40"
+WORK24_AUTH_KEY_JOB_SKILLS="5cd0fd16-e11f-428d-a48c-60546fb81add"
+WORK24_AUTH_KEY_MAJORS="07c6a949-3f97-49fc-87c2-e2c53246427c"
+HTTP_TIMEOUT="30"
+CAREER_LOOKUP_TIMEOUT_MS="120000"
+
+# === 이루리 수집기 | 외부 Python 파일의 실제 위치. Windows 경로는 역슬래시 그대로 입력합니다. ===
+ELURI_SCRIPT_PATH="C:\Users\jjang\OneDrive\바탕 화면\새 폴더\run_eluri_batch.py" 
+ELURI_PYTHON=""
+ELURI_PROFILE_DIR="data/eluri-profiles"
+
+# === 저장·보안 | 기존 SESSION_SECRET/TOKEN_KEY를 바꾸면 로그인 세션이나 저장된 GitHub 연결을 읽지 못할 수 있습니다. ===
+DATA_DIR="data/blobs"
+SESSION_SECRET="208490002d4f40776fe2cdcfc426b10afcd60a34e809ae0d55a481b788e9445871459efdbd342c8519549eecf5bd0b2d"
+TOKEN_KEY="f7906b91ba0b2efddf061361fad9c1b638969098a18ef204335ccba8eb5304c2"
+FLASK_SECRET_KEY="e4154e1d37be28d45089ecddf4e38617419369d2ec26e5abed8d6492ec915256"
+
+# === Python 단독 실행 옵션 | 통합 실행의 내부 포트는 자동으로 배정됩니다. ===
+APP_PORT="8000"
+APP_THREADS="8"
